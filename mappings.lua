@@ -5,6 +5,9 @@
 -- automatically pick-up stored data by this setting.)
 return {
   -- first key is the mode
+  i = {
+    ["kj"] = { "<ESC>", desc = "Escape" },  -- change description but the same command
+  },
   n = {
     -- second key is the lefthand side of the map
 
@@ -31,7 +34,7 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>w"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
   t = {
     -- setting a mapping to false will disable it

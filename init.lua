@@ -18,7 +18,10 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  -- colorscheme = "astrodark",
+  -- colorscheme = "desert",
+  -- colorscheme = "base16-ia-light"
+  colorscheme = "catppuccin-latte",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -64,6 +67,7 @@ return {
       },
     },
   },
+
 
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so

@@ -9,4 +9,13 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {
+    "kylechui/nvim-surround",
+    -- tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup()
+    end
+  }
 }
