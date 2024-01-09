@@ -15,11 +15,25 @@ return {
         "    ████   ██ ██    ██ ██ ████  ████",
         "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
         "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        "    ██   ████   ████   ██ ██      ██",
+        "    ██   ████   ████   ██ ██polizz██",
       }
       return opts
     end,
   },
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --   opts = function(_, opts)
+  --     -- customize the dashboard header
+  --     local cmp = require "cmp"
+  --     opts.mapping["<Tab>"] = cmp.select_next_item()
+  --     return opts
+  --   end,
+  -- },
+  --
+  --
+  --
+  --
+  --
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
