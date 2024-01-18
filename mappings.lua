@@ -21,7 +21,7 @@ return {
     --   desc = "Previous buffer",
     -- },
 
-    ["<leader>fg"] = { ":Telescope live_grep<cr>", desc = "Fast Grep"  },
+    ["<leader>fg"] = { ":Telescope live_grep<cr>", desc = "Live Grep"  },
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
