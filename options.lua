@@ -2,7 +2,7 @@
 return {
   opt = {
     -- set to true or false etc.
-    timeoutlen = 100,
+    timeoutlen = 75,
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
