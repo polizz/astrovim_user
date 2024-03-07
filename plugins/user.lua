@@ -9,6 +9,11 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" }
+  },
   { 
     "catppuccin/nvim",
     name = "catppuccin",
