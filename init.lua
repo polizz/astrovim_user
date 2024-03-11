@@ -1,3 +1,5 @@
+_G.qrz = require'user.qrz'
+
 return {
   -- Configure AstroNvim updates
   updater = {
@@ -16,13 +18,12 @@ return {
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     },
   },
-
   -- Set colorscheme to use
+  -- lua-guide
   -- colorscheme = "astrodark",
   -- colorscheme = "desert",
   -- colorscheme = "base16-ia-light"
   colorscheme = "catppuccin-latte",
-
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -67,8 +68,6 @@ return {
       },
     },
   },
-
-
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here

@@ -25,15 +25,17 @@ return {
     --   desc = "Previous buffer",
     -- },
 
-    ["<leader>a"] = { function() harpoon:list():append() end },
-    ["<leader>r"] = { function() harpoon:list():remove() end },
+    ["<leader>a"] = { function() harpoon:list():append() end, desc = "Harpoon append" },
+    ["<leader>r"] = { function() harpoon:list():remove() end, desc = "Harpoon remove"  },
     ["<C-f>"] = { function() harpoon.ui:toggle_quick_menu(harpoon:list()) end },
     ["<C-j>"] = { function() harpoon:list():select(1) end },
     ["<C-k>"] = { function() harpoon:list():select(2) end },
     ["<C-l>"] = { function() harpoon:list():select(3) end },
-    ["<C-;>"] = { function() harpoon:list():select(4) end },
+    ["<C-i>"] = { function() harpoon:list():select(4) end },
     ["<C-[>"] = { function() harpoon:list():prev() end },
     ["<C-]>"] = { function() harpoon:list():next() end },
+
+    ["<leader>qq"] = { function() _G.qrz.lookup() end },
 
     ["<leader>fg"] = { ":Telescope live_grep<cr>", desc = "Live Grep"  },
     -- mappings seen under group name "Buffer"
