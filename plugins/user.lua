@@ -41,6 +41,18 @@ return {
   --     })
   --   end
   -- },
+  -- {
+  --   "DanilaMihailov/beacon.nvim",
+  --   config = function()
+  --     require("DanilaMihailov/beacon.nvim").setup()
+  --   end
+  -- },
+  {
+    "williamboman/mason.nvim",
+    config = function()
+      return require("mason").setup({ PATH = "append" }) -- use system rust-analyzer
+    end
+  },
   {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
