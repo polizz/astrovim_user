@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -14,7 +12,7 @@ return {
     features = {
       autoformat = true, -- enable or disable auto formatting on start
       codelens = true, -- enable/disable codelens refresh on start
-      inlay_hints = false, -- enable/disable inlay hints on start
+      inlay_hints = true, -- enable/disable inlay hints on start
       semantic_tokens = true, -- enable/disable semantic token highlighting
     },
     -- customize lsp formatting options
@@ -46,7 +44,18 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
-    },
+      rust_analyzer = {
+              settings = {
+                ["rust-analyzer"] = {
+                  cargo = {
+                    extraEnv = { CARGO_PROFILE_RUST_ANALYZER_INHERITS = 'dev', },
+                    extraArgs = { "--profile", "rust-analyzer", "--target-dir", "/tmp/rust-analyzer" }, -- can also effect this `cargo check` option by setting `CARGO_TARGET_DIR` env value
+                    -- extraArgs = { "--target-dir", "/tmp/rust-analyzer" },
+                  },
+                },
+              },
+            },
+          },
     -- customize how language servers are attached
     handlers = {
       -- a function without a key is simply the default handler, functions take two parameters, the server name and the configured options table for that server
