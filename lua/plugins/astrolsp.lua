@@ -6,7 +6,6 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrolsp",
-  ---@type AstroLSPOpts
   opts = {
     -- Configuration table of features provided by AstroLSP
     features = {
@@ -39,6 +38,7 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "rust_analyzer"
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
